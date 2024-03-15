@@ -18,3 +18,7 @@ output "private_subnet_ids" {
 output "database_subnet_ids" {
   value = aws_subnet.database[*].id
 }
+
+output "is_peering_required" {
+  value = aws_vpc_peering_connection
+}
