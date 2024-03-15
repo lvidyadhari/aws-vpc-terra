@@ -20,5 +20,5 @@ output "database_subnet_ids" {
 }
 
 output "is_peering_required" {
-  value = aws_vpc_peering_connection.peering.id
+  value = aws_vpc_peering_connection.peering[*].id
 }
